@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#2B1C12">
+<title>브라운바니 이용 안내</title>
+<meta property="og:title" content="동탄파티룸 브라운바니 이용 안내">
+<meta property="og:description" content="오시는 길·주차·냉난방·퇴실 정리까지, 일행분들과 함께 봐 주세요.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --espresso:#2B1C12;
+    --brown:#5A3B26;
+    --caramel:#C8874A;
+    --caramel-soft:#F3E2CC;
+    --cream:#F5EBDD;
+    --paper:#FFFBF5;
+    --line:#E6D6C2;
+    --text:#2B1C12;
+    --muted:#7A6352;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--cream);color:var(--text);
+    font-family:"Noto Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:16px;line-height:1.65;word-break:keep-all;overflow-wrap:anywhere;
+  }
+  a{color:inherit}
+  .wrap{max-width:560px;margin:0 auto;padding:0 16px 40px}
+
+  header.top{background:var(--espresso);color:var(--cream);padding:28px 16px 22px}
+  header.top .in{max-width:560px;margin:0 auto}
+  .brand{font-size:13px;letter-spacing:.08em;color:var(--caramel);font-weight:700}
+  header.top h1{margin:6px 0 6px;font-size:26px;line-height:1.3;font-weight:900}
+  header.top p{margin:0;color:#E9DCCB;font-size:15px}
+
+  nav.toc{position:sticky;top:0;z-index:5;background:var(--cream);border-bottom:1px solid var(--line)}
+  nav.toc .in{max-width:560px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+  nav.toc .in::-webkit-scrollbar{display:none}
+  nav.toc a{flex:0 0 auto;text-decoration:none;font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--brown)}
+
+  .must{margin:18px 0 8px;background:var(--paper);border:2px solid var(--caramel);border-radius:16px;padding:18px 16px}
+  .must h2{margin:0 0 12px;font-size:19px;color:var(--brown)}
+  .must ol{margin:0;padding:0;list-style:none;counter-reset:m}
+  .must li{counter-increment:m;position:relative;padding:0 0 0 38px;margin:0 0 16px}
+  .must li:last-child{margin-bottom:0}
+  .must li::before{content:counter(m);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--espresso);color:var(--cream);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+  .must b.t{display:block;font-size:17px;margin-bottom:2px}
+  .must .sub{color:var(--muted);font-size:15px}
+
+  section.card{margin:14px 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 16px;scroll-margin-top:64px}
+  section.card h2{margin:0 0 10px;font-size:19px;display:flex;align-items:center;gap:8px}
+  section.card h2 .no{font-size:12px;font-weight:700;color:var(--caramel);border:1px solid var(--caramel);border-radius:6px;padding:0 6px;line-height:20px}
+  section.card h3{margin:16px 0 6px;font-size:16px;color:var(--brown)}
+  ul.dots{margin:0;padding-left:20px}
+  ul.dots li{margin:4px 0}
+  .note{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--caramel-soft);font-size:15px}
+  .addr{font-size:17px;font-weight:700;line-height:1.5}
+  .steps{margin:10px 0 0;padding:0;list-style:none}
+  .steps li{display:flex;gap:10px;align-items:flex-start;margin:6px 0}
+  .steps li span.k{flex:0 0 auto;font-size:12px;font-weight:700;color:var(--paper);background:var(--brown);border-radius:6px;padding:1px 7px;margin-top:3px}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:12px;font-weight:700;font-size:15px;text-decoration:none;border:1px solid var(--espresso)}
+  .btn.dark{background:var(--espresso);color:var(--cream)}
+  .btn.light{background:var(--paper);color:var(--espresso)}
+  table.refund{width:100%;border-collapse:collapse;font-size:15px;margin-top:6px}
+  table.refund th,table.refund td{border-bottom:1px solid var(--line);padding:9px 4px;text-align:left}
+  table.refund td:last-child,table.refund th:last-child{text-align:right;font-weight:700}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}
+  .grid2 div{background:var(--cream);border-radius:10px;padding:8px 10px;font-size:15px}
+  .grid2 div small{display:block;color:var(--muted);font-size:12px}
+  .slot{margin:12px 0 0;border:2px dashed var(--caramel);border-radius:12px;padding:22px 12px;text-align:center;color:var(--muted);font-size:14px;display:none}
+  .slot.show{display:block}
+  .guide-img{display:block;width:100%;height:auto;border-radius:12px;margin-top:12px}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:8px 16px 32px}
+  section.card.contact{background:var(--espresso);color:var(--cream);border:0}
+  .contact .btn.light{border-color:var(--cream)}
+  .contact .btn.dark{background:var(--caramel);border-color:var(--caramel);color:var(--espresso)}
+  .contact p{color:#E9DCCB}
+  .tel{font-size:22px;font-weight:900;letter-spacing:.02em}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="in">
+    <div class="brand">BROWN BUNNY · 동탄파티룸</div>
+    <h1>브라운바니 이용 안내</h1>
+    <p>예약해 주셔서 감사해요. 일행분들과 함께 한 번씩 봐 주세요.</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="바로가기">
+  <div class="in">
+    <a href="#must">꼭 확인</a>
+    <a href="#way">오시는 길</a>
+    <a href="#parking">주차</a>
+    <a href="#air">냉난방</a>
+    <a href="#food">취식·분리수거</a>
+    <a href="#out">퇴실 정리</a>
+    <a href="#rules">이용 수칙</a>
+    <a href="#items">시설·비품</a>
+    <a href="#refund">취소·환불</a>
+    <a href="#call">문의</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <div class="must" id="must">
+    <h2>꼭 확인해 주세요</h2>
+    <ol>
+      <li>
+        <b class="t">예약 인원보다 많이 오시면 추가 요금이 있어요</b>
+        기본 4인 기준이며, 예약 인원을 넘는 분은 <b>1인당 10,000원</b>이에요.
+        <div class="sub">36개월 미만 아이는 인원에 넣지 않아요.</div>
+        <div class="note">입실하시면 <b>'입실 인원'을 문자로</b> 알려 주세요(010-9564-9810). 초과분은 계좌이체로 안내드려요.</div>
+      </li>
+      <li>
+        <b class="t">나가실 때 꼭 꺼 주세요</b>
+        <b>전등 · 냉온풍기 · 바닥 난방</b> 세 가지를 꺼 주세요.
+        <div class="sub">나가실 때 불 끈 사진 한 장 보내 주시면 감사해요.</div>
+      </li>
+    </ol>
+  </div>
+
+  <section class="card" id="way">
+    <h2><span class="no">01</span>오시는 길</h2>
+    <div class="addr">경기도 화성시 동탄구 동탄첨단산업1로 27, B동 2562호</div>
+    <div class="note">내비게이션은 <b>'동탄파티룸 브라운바니'</b>로 검색해 주세요.</div>
+    <ol class="steps">
+      <li><span class="k">1</span><span>B동 1층 엘리베이터를 타고 <b>25층</b>에서 내려요.</span></li>
+      <li><span class="k">2</span><span>내려서 <b>오른쪽으로 직진</b>하면 <b>2562호</b>예요.</span></li>
+    </ol>
+    <p class="note" style="background:var(--cream)">출입 비밀번호는 이 페이지에 적지 않아요. 따로 받으신 안내를 확인해 주시고, 못 받으셨다면 아래 번호로 문자 주세요.</p>
+    <div class="btns">
+      <a class="btn dark" href="https://map.naver.com/p/entry/place/2090804373" target="_blank" rel="noopener">네이버 지도로 보기</a>
+    </div>
+  </section>
+
+  <section class="card" id="parking">
+    <h2><span class="no">02</span>주차</h2>
+    <p style="margin:0 0 8px"><b>차량번호 등록 시 2시간 무료</b> · 그 뒤 1시간에 1,800원</p>
+    <ul class="dots">
+      <li>예약 때 차량번호를 적으셨다면 자동으로 등록돼요. 못 적으셨다면 <b>입실 직후 차량번호를 문자</b>로 보내 주세요(010-9564-9810).</li>
+      <li>같은 건물 상가(카페·식당 등)를 이용하시면 상가에서 <b>2시간 추가</b>돼요(최대 4시간 무료). 상가에서 "주차 등록해 주세요"라고 말씀하시면 돼요.</li>
+      <li>나갔다 다시 들어오시면 저희에게 다시 알려 주세요. <b>다시 2시간 무료</b>예요(횟수 제한 없음).</li>
+      <li>등록하지 않은 차량은 1시간에 6,000원이에요.</li>
+      <li>B동 J/K 기둥 근처에 세우시면 가까워요.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="air">
+    <h2><span class="no">03</span>냉난방</h2>
+    <ul class="dots">
+      <li>공간 <b>가운데 냉온풍기 1대</b>(리모컨)로 여름·겨울 모두 써요. 여름엔 냉방, 겨울엔 난방이에요.</li>
+      <li>겨울에는 <b>바닥 난방 3곳</b>도 켜 주세요.</li>
+    </ul>
+    <div class="note">나가실 때 냉온풍기와 바닥 난방을 꼭 꺼 주세요.</div>
+  </section>
+
+  <section class="card" id="food">
+    <h2><span class="no">04</span>취식·조리·분리수거</h2>
+    <h3>먹고 마시기</h3>
+    <ul class="dots">
+      <li>포장·배달 음식 모두 가져오셔도 돼요.</li>
+      <li>주방: 인덕션, 전자레인지, 200L 냉장고, 조리도구와 식기(앞접시·쟁반·와인잔 등), 60구 얼음틀</li>
+      <li>얼음정수기는 <b>실내 주방 바</b>에 있어요.</li>
+      <li>토스트기·에어프라이어는 <b>베란다</b>에 있어요.</li>
+    </ul>
+    <h3>쓰레기는 공간 안에서 끝</h3>
+    <p style="margin:0 0 6px">음식물 쓰레기까지 공간 안 통에 버리시면 돼요. 밖으로 들고 나가실 필요 없어요.</p>
+    <div class="grid2">
+      <div><small>입구 쪽 검정 통</small>플라스틱·캔</div>
+      <div><small>입구 쪽 검정 통</small>유리·비닐·종이</div>
+      <div><small>입구 쪽 뚜껑 달린 검정 통</small>일반쓰레기</div>
+      <div><small>싱크대 아래 스테인리스 통</small>음식물 쓰레기</div>
+    </div>
+  </section>
+
+  <section class="card" id="out">
+    <h2><span class="no">05</span>퇴실 정리</h2>
+    <p style="margin:0 0 8px">예약 시간에는 입실부터 뒷정리·퇴실까지 들어가 있어요. 여유 있게 정리를 시작해 주세요.</p>
+    <ul class="dots">
+      <li>설거지</li>
+      <li>분리수거 (위 통에 나눠서)</li>
+      <li>가구를 처음 자리로 돌려 놓기</li>
+      <li><b>전등 · 냉온풍기 · 바닥 난방 끄기</b></li>
+      <li>나가실 때 문이 잠겼는지 확인</li>
+    </ul>
+  </section>
+
+  <section class="card" id="rules">
+    <h2><span class="no">06</span>이용 수칙</h2>
+    <ul class="dots">
+      <li>실내에서는 실내화를 신어 주세요.</li>
+      <li>전 구역 금연이에요(전자담배 포함). 흡연은 <b>8층 옥상정원</b>을 이용해 주세요. 위반 시 청소비가 청구될 수 있어요.</li>
+      <li>지나친 고성방가는 자제 부탁드려요.</li>
+      <li>반려동물과 함께 오실 때는 꼭 미리 말씀해 주세요.</li>
+      <li>숙박시설이 아니라서 침구·세면도구는 없어요.</li>
+    </ul>
+    <img class="guide-img" src="guide.png" alt="브라운바니 이용 수칙 가이드">
+  </section>
+
+  <section class="card" id="items">
+    <h2><span class="no">07</span>시설·비품</h2>
+    <p style="margin:0 0 8px">한 번 예약하시면 공간 전체를 단독으로 쓰세요.</p>
+    <ul class="dots">
+      <li>65인치 이동식 TV, 마샬 스피커, 보드게임</li>
+      <li>삼각대, 웨이브 전신거울, 스탠드 옷걸이(행거), 이동식 화이트보드</li>
+      <li>의자 24개, 좌식 소파, 베란다 접이식 테이블·의자</li>
+      <li>실내화(240·270mm), 휴대폰 충전기, 구급상자, 블라인드·커튼</li>
+      <li>고속 와이파이</li>
+      <li>1인실: 커튼·블라인드로 나눈 공간이에요(방음은 안 돼요). 커튼을 치고 잠깐 옷을 갈아입으실 수 있어요.</li>
+    </ul>
+    <h3>없는 것</h3>
+    <p style="margin:0">촬영 조명·반사판·배경지, 무선 마이크, 빔프로젝터, 노래방 기기는 없어요.</p>
+    <h3>건물 안 편의시설</h3>
+    <p style="margin:0">B동 1층 스타벅스, 24시 편의점, 지하1층~1층 식당가(코벤트가든)</p>
+  </section>
+
+  <section class="card" id="refund">
+    <h2><span class="no">08</span>취소·환불</h2>
+    <table class="refund">
+      <thead><tr><th>취소하는 날</th><th>환불</th></tr></thead>
+      <tbody>
+        <tr><td>이용 6일 전까지</td><td>100%</td></tr>
+        <tr><td>이용 5일 전</td><td>70%</td></tr>
+        <tr><td>이용 4일 전</td><td>50%</td></tr>
+        <tr><td>이용 3일 전 ~ 당일</td><td>환불 없음</td></tr>
+      </tbody>
+    </table>
+    <ul class="dots" style="margin-top:10px">
+      <li>인원을 줄여서 받는 환불은 이용일 7일 전까지 가능해요.</li>
+      <li>위 기준은 네이버 예약 기준이에요. 다른 곳에서 예약하셨다면 그곳에 적힌 규정을 따라요.</li>
+      <li>요금도 예약하신 플랫폼에 나온 금액 기준이에요.</li>
+    </ul>
+  </section>
+
+  <section class="card contact" id="call">
+    <h2>문의</h2>
+    <div class="tel">010-9564-9810</div>
+    <p style="margin:2px 0 0">전화·문자 모두 괜찮아요.</p>
+    <div class="btns">
+      <a class="btn dark" href="tel:01095649810">전화하기</a>
+      <a class="btn light" href="sms:01095649810">문자 보내기</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>동탄파티룸 브라운바니 · 25층에서 기다릴게요</footer>
+
+</body>
+</html>
